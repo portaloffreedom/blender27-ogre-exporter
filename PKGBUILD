@@ -1,6 +1,6 @@
 # Contributor : giacomogiorgianni@gmail.com
 
-pkgname=blender26-ogre-exporter
+pkgname=blender27-ogre-exporter
 _name=blender2ogre
 pkgver=0.6.0
 pkgrel=1
