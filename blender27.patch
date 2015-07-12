@@ -6,8 +6,8 @@ index 2b1ce1b..2360833 100644
  # THE SOFTWARE.
  # ##### END MIT LICENSE BLOCK #####
  
--from ogre_mesh_exporter.global_properties import saveStaticConfig, loadStaticConfig
-+from ogre_mesh_exporter.global_properties import saveStaticConfig
+-from ogre_mesh_exporter.global_properties import saveStaticConfig
++from ogre_mesh_exporter.global_properties import saveStaticConfig, loadStaticConfig
  from ogre_mesh_exporter.mesh_exporter import exportMesh
  from ogre_mesh_exporter.log_manager import LogManager, ObjectLog, Message
  
@@ -15,8 +15,8 @@ index 2b1ce1b..2360833 100644
  		col = layout.column()
  		col.label("Selected:")
  		selectedObjectList = globalSettings.selectedObjectList
--		#col.template_list(selectedObjectList, "collection", selectedObjectList, "collectionIndex")
-+		col.template_list(selectedObjectList, "collection", selectedObjectList, "collectionIndex")
+-		col.template_list(selectedObjectList, "collection", selectedObjectList, "collectionIndex")
++		#col.template_list(selectedObjectList, "collection", selectedObjectList, "collectionIndex")
  
  		# ####################################################
  		# Material settings
