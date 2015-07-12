@@ -1,0 +1,5 @@
+*.py
+*.pkg.tar.xz
+/pkg/
+/src/
+
