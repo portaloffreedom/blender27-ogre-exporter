@@ -1,0 +1,22 @@
+diff --git a/main_exporter_panel.py b/main_exporter_panel.py
+index 2b1ce1b..2360833 100644
+--- a/main_exporter_panel.py
++++ b/main_exporter_panel.py
+@@ -20,7 +20,7 @@
+ # THE SOFTWARE.
+ # ##### END MIT LICENSE BLOCK #####
+ 
+-from ogre_mesh_exporter.global_properties import saveStaticConfig, loadStaticConfig
++from ogre_mesh_exporter.global_properties import saveStaticConfig
+ from ogre_mesh_exporter.mesh_exporter import exportMesh
+ from ogre_mesh_exporter.log_manager import LogManager, ObjectLog, Message
+ 
+@@ -146,7 +146,7 @@ class MainExporterPanel(bpy.types.Panel):
+ 		col = layout.column()
+ 		col.label("Selected:")
+ 		selectedObjectList = globalSettings.selectedObjectList
+-		#col.template_list(selectedObjectList, "collection", selectedObjectList, "collectionIndex")
++		col.template_list(selectedObjectList, "collection", selectedObjectList, "collectionIndex")
+ 
+ 		# ####################################################
+ 		# Material settings
